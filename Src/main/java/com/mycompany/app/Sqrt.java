@@ -5,12 +5,12 @@ public class Sqrt
    double arg;
 
    public Sqrt(double arg) {
-      this.arg=arg;
+      this.arg=arg;   
    }
    public double average(double x,double y) {
       return (x+y)/2.0;
    }
-   public boolean good(double ,double ) {
+   public boolean good(double guess,double x) {
       return Math.abs(guess*guess-x)<delta;
    }
    public double improve(double guess,double x) {
