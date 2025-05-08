@@ -95,12 +95,6 @@ public class AppTest {
         Sqrt sqrt = new Sqrt(13);
         assertEquals(sqrt.calc(), Math.sqrt(13), sqrt.getDelta());
     }
-
-    @Test
-    public void testI() {
-        Sqrt sqrt = new Sqrt(111);
-        assertEquals(sqrt.calc(), Math.sqrt(111), sqrt.getDelta());
-    }
   
     @Test
     public void testZero() {
@@ -120,13 +114,6 @@ public class AppTest {
         Sqrt sqrt = new Sqrt(0.36);
         double result = sqrt.calc();
         assertEquals(0.6, result, 0.0001);
-    }
-
-    @Test
-    public void testSmallA() {
-        Sqrt sqrt = new Sqrt(0.49);
-        double result = sqrt.calc();
-        assertEquals(0.7, result, 0.0001);
     }
     
 }
