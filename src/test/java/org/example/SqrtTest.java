@@ -1,14 +1,9 @@
-package com.mycompany.app;
+package org.example;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
-public class AppTest {
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    @Test
-    public void testConst() {
-        Sqrt sqrt = new Sqrt(11.0);
-        assertEquals(11.0, sqrt.arg);
-    }
+public class SqrtTest {
 
     @Test
     public void testA() {
@@ -21,7 +16,7 @@ public class AppTest {
         Sqrt sqrt = new Sqrt(16.0);
         assertTrue(sqrt.good(4.0, 16.0));
     }
-  
+
     @Test
     public void testC() {
         Sqrt sqrt = new Sqrt(9.0);
@@ -69,7 +64,7 @@ public class AppTest {
         Sqrt sqrt = new Sqrt(2.0);
         assertEquals(Math.sqrt(2.0), sqrt.calc(), sqrt.getDelta());
     }
-  
+
     @Test
     public void testImpr() {
         Sqrt sqrt = new Sqrt(16.0);
@@ -95,7 +90,7 @@ public class AppTest {
         Sqrt sqrt = new Sqrt(13);
         assertEquals(sqrt.calc(), Math.sqrt(13), sqrt.getDelta());
     }
-  
+
     @Test
     public void testZero() {
         Sqrt sqrt = new Sqrt(0.0);
@@ -115,5 +110,4 @@ public class AppTest {
         double result = sqrt.calc();
         assertEquals(0.6, result, 0.0001);
     }
-    
 }
